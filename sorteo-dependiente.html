@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Digite el numero de días</h3>
+
+<input type="number" id="myNumber">
+
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<h3>Cuantos son los participantes del concurso?</h3>
+
+<input type="number" id="myNumber2">
+
+
+<button onclick="myFunction2()">Try it</button>
+
+<p id="demo2"></p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myNumber").value;
+    var y = Math.floor((Math.random() * x) + 1);
+    document.getElementById("demo").innerHTML = y;
+       
+}
+function myFunction2() {
+    var a = document.getElementById("myNumber2").value;
+    var b = Math.floor((Math.random() * a) + 1);
+    document.getElementById("demo2").innerHTML = b;
+       
+}
+</script>
+
+</body>
+</html>
